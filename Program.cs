@@ -1,4 +1,5 @@
 using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,19 +11,42 @@ namespace lavoro_info
     {
         static void Main(string[] args)
         {
-            int i = 10;
+            int i;
 
             Console.WriteLine("MENU");
 
 
             do
             {
-                Console.WriteLine("1) Inserimento di un nuovo record");
-                Console.WriteLine("2) Visualizzazione dei file");
-                Console.WriteLine("3) modifica di un record");
-                Console.WriteLine("4) cancellazione di un recod");
+                i = Convert.ToInt32(Console.ReadLine());
 
+                switch (i)
+                {
+                    case 1:
+                        {
+                            Console.WriteLine("1) Inserimento di un nuovo record");
 
+                            break;
+                        }
+                    case 2:
+                        {
+                            Console.WriteLine("2) Visualizzazione dei file");
+
+                            break;
+                        }
+                    case 3:
+                        {
+                            Console.WriteLine("3) modifica di un record");
+
+                            break;
+                        }
+                    case 4:
+                        {
+                            Console.WriteLine("4) cancellazione di un recod");
+
+                            break;
+                        }
+                }
 
 
 
@@ -30,7 +54,7 @@ namespace lavoro_info
             }
             while (i != 0);
 
-             
+
 
 
         }
